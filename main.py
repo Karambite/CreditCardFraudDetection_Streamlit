@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 #from sklearn.model_selection import train_test_split
 #from sklearn.preprocessing import  LabelEncoder
-import xgboost as xgb
-import numpy as np
+#import xgboost as xgb
+#import numpy as np
 st.header("Credit Card Fraud Detection")
 
 st.subheader("Enter an input array")
