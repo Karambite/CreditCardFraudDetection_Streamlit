@@ -9,4 +9,4 @@ matplotlib==3.5.1
 hyperopt==0.2.7
 tensorflow
 keras
-pickle
+pickle5
