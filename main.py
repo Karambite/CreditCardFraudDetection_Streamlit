@@ -18,7 +18,7 @@ input = st.text_input("Enter your input array: ", key="name")
 if st.button('Make Prediction'):
     temp_array = input.split(',')
     temp_array = np.array(temp_array, dtype=np.float32)
-    tf_pred = tf_model.predict(np.array( [temp_array,]))
+    tf_pred = tf_model.predict(np.array( [temp_array]))
     rfc_pred = rfc_model.predict(np.array([temp_array]))
     st.write("tensorflow Model predicted: " , str(tf_pred[0]))
     st.write("Random Forest Classifier Model predicted: " , str(rfc_pred[0]))
