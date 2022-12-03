@@ -20,5 +20,5 @@ if st.button('Make Prediction'):
     temp_array = np.array(temp_array, dtype=np.float32)
     tf_pred = tf_model.predict(np.array( [temp_array,]))
     rfc_pred = rfc_model.predict(np.array([temp_array]))
-    st.write("tensorflow Model predicted: " , tf_pred[0])
-    st.write("Random Forest Classifier Model predicted: " , rfc_pred[0])
+    st.write("tensorflow Model predicted: " , str(tf_pred[0]))
+    st.write("Random Forest Classifier Model predicted: " , str(rfc_pred[0]))
