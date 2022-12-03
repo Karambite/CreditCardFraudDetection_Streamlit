@@ -16,7 +16,7 @@ input = st.text_input("Enter your input array: ", key="name")
 
 
 if st.button('Make Prediction'):
-    temp_array = temp.split(',')
+    temp_array = input.split(',')
     tf_pred = tf_model.predict(np.array( [temp_array,]))
     rtc_pred = rfc.predict(np.array([temp_array]))
     st.write(tf_pred)
