@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import  LabelEncoder
 import xgboost as xgb
 from tensorflow.keras.models import load_model
-import pickel
+import pickle
 tf_model = load_model('tf_model.json')
 rfc_model = pickle.load(open('RandomForestClassifier_model.json','rb'))
 
